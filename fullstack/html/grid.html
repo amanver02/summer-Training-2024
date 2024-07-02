@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Colored Bars</title>
+    <style>
+        * {
+            box-sizing: border-box ;
+            margin: 0;
+            padding: 0;
+         
+            height: 100px;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #fff;
+        }
+
+        .container{
+            display: flex;
+            flex-wrap: wrap;    
+            height: auto;
+            width: 100%;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .bar {
+            height: 50px;
+            margin: 10px 0;
+        }
+
+        .bar1 {
+            background-color: orange;
+            width: 50%;
+            height: 200%;
+        }
+
+        .bar2 {
+            background-color: red;
+            width: 75%;
+        }
+
+        .bar3 {
+            background-color: yellow;
+            width: 90%;
+        }
+
+        .bar4 {
+            background-color: green;
+            width: 100%;
+        }
+
+        .bar5 {
+            background-color: blue;
+            width: 85%;
+            text-align: center;
+        }
+
+        .bar6 {
+            background-color: purple;
+            width: 80%;
+        }
+
+        @media (max-width: 600px) {
+            .bar {
+                height: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="bar bar1"></div>
+        <div class="bar bar2"></div>
+        <div class="bar bar3"></div>
+        <div class="bar bar4"></div>
+        <div class="bar bar5"></div>
+        <div class="bar bar6"></div>
+    </div>
+</body>
+</html>
